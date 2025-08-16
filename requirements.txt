@@ -10,3 +10,4 @@ langchain-experimental
 db-sqlite3
 pandas
 numpy
+sentence-transformers
