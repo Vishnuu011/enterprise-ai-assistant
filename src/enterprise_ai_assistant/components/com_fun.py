@@ -266,7 +266,7 @@ def sql_agent_function(model: str, sql_data_folder: str) -> Optional[AgentExecut
 
 
 
-def pandas_dataframe_function(model: str, csv_folder: str) -> Optional[AgentExecutor]:
+def pandas_dataframe_agent_function(model: str, csv_folder: str) -> Optional[AgentExecutor]:
 
     try:
         for file_name in os.listdir(csv_folder):

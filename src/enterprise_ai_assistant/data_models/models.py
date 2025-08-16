@@ -1,6 +1,7 @@
 from langchain_core.pydantic_v1 import BaseModel, Field
-from typing import List, Literal, Optional
-
+from typing import List, Literal, Optional, TypedDict
+from langchain_core.messages import BaseMessage
+from langchain.schema import Document
 
 class VectorStore(BaseModel):
     """
@@ -45,3 +46,13 @@ class AnswerGrader(BaseModel):
     grade: Literal["yes", "no"] = Field(
         ..., description="'yes' if the response answers the query; otherwise 'no'."
     )
+
+
+class AgentState(TypedDict):
+    """Graph state shared by nodes."""
+    query: str
+    chat_history: List[BaseMessage]
+    generation: str
+    documents: List[Document]
+    # Added key to store the quality gate decision
+    quality_gate_decision: str
