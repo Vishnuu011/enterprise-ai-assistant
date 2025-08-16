@@ -37,8 +37,7 @@ rag_template = (
     "query: {query}"
 )
 
-fallback_prompt = ChatPromptTemplate.from_template(
-    (
+fallback_prompts = (
         "You are a friendly and professional Enterprise Knowledge & Workflow Assistant.\n"
         "You help answer questions using company knowledge and tools.\n"
         "If a query is unrelated to company operations, policies, reports, or data, "
@@ -47,4 +46,3 @@ fallback_prompt = ChatPromptTemplate.from_template(
         "Current conversation:\n\n{chat_history}\n\n"
         "human: {query}"
     )
-)
