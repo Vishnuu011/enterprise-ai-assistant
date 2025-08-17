@@ -27,7 +27,10 @@ It supports multiple structured and unstructured data tools:
 
 ## 🛠 Installation
 
+
 ```bash
 git clone https://github.com/Vishnuu011/enterprise-ai-assistant
 cd enterprise-ai-assistant
+python -m venv <environment_name> or conda create -p venv {your python version} -y (and activate envs)
 pip install -r requirements.txt
+streamlit run app.py
