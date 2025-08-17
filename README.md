@@ -21,7 +21,7 @@ It supports multiple structured and unstructured data tools:
 - Upload **PDF/TXT/DOCX** for RAG (document Q&A)  
 - Automatic **query routing** to the correct tool (CSV, SQL, RAG, or Search)  
 - **LangGraph orchestration** with multi-agent nodes  
-- **Streamlit frontend** (no Flask needed)
+- **Streamlit frontend** 
 
 ---
 
